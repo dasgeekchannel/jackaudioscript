@@ -51,7 +51,10 @@ sleep 2
 #also starts carla with our saved audio routing.
 carla ~/jacksetup/default.carxp &
 sleep 3
-
+killall -9 pulseaudio
+sleep 3
+pulseaudio  --start
+sleep 3
 #now we just give ourselves a system message to know that our audio is up and running.
 wall "Audio systems up and running"
 sleep 1
