@@ -49,7 +49,8 @@ sleep 2
 #sleep 5
 
 #also starts carla with our saved audio routing.
-carla #~/jacksetup/default.carxp &
+carla &
+#carla ~/jacksetup/default.carxp &
 sleep 3
 killall -9 pulseaudio
 sleep 3
